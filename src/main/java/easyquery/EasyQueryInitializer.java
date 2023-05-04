@@ -40,7 +40,7 @@ public class EasyQueryInitializer {
 
     public static EasyQueryAccount selectOne() {
         return easyQuery.queryable(EasyQueryAccount.class)
-                .where(o->o.eq(EasyQueryAccount::getId,100)
+                .where(o->o.ge(EasyQueryAccount::getId,100)
                         .or()
                         .eq(EasyQueryAccount::getUserName,"admin" + ThreadLocalRandom.current().nextInt(10000)))
                 .firstOrNull();
