@@ -27,7 +27,7 @@
         <HikariCP.version>4.0.3</HikariCP.version>
 
         <junit.version>4.13.2</junit.version>
-        <easy-query.version>0.1.5</easy-query.version>
+        <easy-query.version>0.3.2</easy-query.version>
 
     </properties>
 
