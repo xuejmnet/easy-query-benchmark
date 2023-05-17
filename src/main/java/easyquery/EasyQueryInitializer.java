@@ -29,7 +29,7 @@ public class EasyQueryInitializer {
 
     public static void init() {
         DataSource dataSource = DataSourceFactory.getDataSource();
-         easyQuery = EasyQueryBootstrapper.defaultBuilderConfiguration().setDataSource(dataSource)
+         easyQuery = EasyQueryBootstrapper.defaultBuilderConfiguration().setDefaultDataSource(dataSource)
                 .build();
 
 //        AuditManager.setAuditEnable(true);
