@@ -1,27 +1,15 @@
 package easyquery;
 
-import com.easy.query.core.abstraction.EasyQueryRuntimeContext;
-import com.easy.query.core.api.client.DefaultEasyQuery;
 import com.easy.query.core.api.client.EasyQuery;
 import com.easy.query.core.api.pagination.EasyPageResult;
 import com.easy.query.core.bootstrapper.EasyQueryBootstrapper;
-import com.easy.query.core.logging.LogFactory;
-import com.mybatisflex.core.MybatisFlexBootstrap;
-import com.mybatisflex.core.paginate.Page;
-import com.mybatisflex.core.query.QueryWrapper;
 import commons.DataSourceFactory;
 import easyquery.entity.EasyQueryAccount;
-import flex.entity.FlexAccount;
-import flex.mapper.FlexAccountMapper;
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import plus.entity.PlusAccount;
 
 import javax.sql.DataSource;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
-import static flex.entity.table.Tables.FLEX_ACCOUNT;
 
 public class EasyQueryInitializer {
 
