@@ -3,6 +3,7 @@ package easyquery.entity;
 
 import com.easy.query.core.annotation.Column;
 import com.easy.query.core.annotation.Table;
+import com.mybatisflex.annotation.EnumValue;
 
 import java.time.LocalDateTime;
 
@@ -16,7 +17,6 @@ import java.time.LocalDateTime;
 public class EasyQueryAccount {
     @Column(primaryKey = true,increment = true)
     private Long id;
-
     private String userName;
 
     private String password;
