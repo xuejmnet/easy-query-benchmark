@@ -1,5 +1,6 @@
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
+import com.mybatisflex.core.datasource.FlexDataSource;
 import com.mybatisflex.core.query.QueryWrapper;
 import easyquery.EasyQueryInitializer;
 import flex.FlexInitializer;
@@ -57,7 +58,6 @@ public class TestStarter {
             testPlusSelectOne();
             System.out.println(">>>>>>>testPlusSelectOne:" + (System.currentTimeMillis() - timeMillis));
         }
-
 
         System.out.println();
         System.out.println();

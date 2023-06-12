@@ -1,7 +1,11 @@
 package easyquery;
 
-import com.easy.query.core.api.client.EasyQuery;
+import com.easy.query.api4j.client.DefaultEasyQuery;
+import com.easy.query.api4j.client.EasyQuery;
+import com.easy.query.core.api.client.EasyQueryClient;
 import com.easy.query.core.api.pagination.EasyPageResult;
+import com.easy.query.core.bean.BeanValueCaller;
+import com.easy.query.core.bean.reflect.ReflectBeanValueCaller;
 import com.easy.query.core.bootstrapper.EasyQueryBootstrapper;
 import commons.DataSourceFactory;
 import easyquery.entity.EasyQueryAccount;
@@ -17,8 +21,11 @@ public class EasyQueryInitializer {
 
     public static void init() {
         DataSource dataSource = DataSourceFactory.getDataSource();
-         easyQuery = EasyQueryBootstrapper.defaultBuilderConfiguration().setDefaultDataSource(dataSource)
+        EasyQueryClient easyQueryClient = EasyQueryBootstrapper.defaultBuilderConfiguration()
+//                .replaceService(BeanValueCaller.class, ReflectBeanValueCaller.class)
+                .setDefaultDataSource(dataSource)
                 .build();
+        easyQuery=new DefaultEasyQuery(easyQueryClient);
 
 //        AuditManager.setAuditEnable(true);
 //        AuditManager.setMessageCollector(new ConsoleMessageCollector());

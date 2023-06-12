@@ -27,7 +27,7 @@
         <HikariCP.version>4.0.3</HikariCP.version>
 
         <junit.version>4.13.2</junit.version>
-        <easy-query.version>0.9.12</easy-query.version>
+        <easy-query.version>0.9.53</easy-query.version>
 
     </properties>
 
@@ -35,6 +35,11 @@
         <dependency>
             <groupId>com.easy-query</groupId>
             <artifactId>sql-core</artifactId>
+            <version>${easy-query.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.easy-query</groupId>
+            <artifactId>sql-api4j</artifactId>
             <version>${easy-query.version}</version>
         </dependency>
         <dependency>
