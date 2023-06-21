@@ -4,8 +4,6 @@ import com.easy.query.api4j.client.DefaultEasyQuery;
 import com.easy.query.api4j.client.EasyQuery;
 import com.easy.query.core.api.client.EasyQueryClient;
 import com.easy.query.core.api.pagination.EasyPageResult;
-import com.easy.query.core.bean.BeanValueCaller;
-import com.easy.query.core.bean.reflect.ReflectBeanValueCaller;
 import com.easy.query.core.bootstrapper.EasyQueryBootstrapper;
 import commons.DataSourceFactory;
 import easyquery.entity.EasyQueryAccount;
